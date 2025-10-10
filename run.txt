@@ -1,3 +1,4 @@
+#python 3.13
 pip install  --index-url https://pypi.tuna.tsinghua.edu.cn/simple/  -r requirements.txt
 
 python app.py
