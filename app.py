@@ -73,4 +73,4 @@ def predict():
 
 if __name__ == '__main__':
     # app.run(debug=True, port=80)  # Run in development mode, modify configuration for production environment
-    app.run(port=10000)  # Run in development mode, modify configuration for production environment
+    app.run(host='0.0.0.0', port=80)  # Run in development mode, modify configuration for production environment
