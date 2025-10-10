@@ -58,7 +58,7 @@ def predict():
     try:
         # Read image
         image = Image.open(io.BytesIO(file.read())).convert('RGB')
-        
+
         # Predict
         # results = predict_image(model, image, classes)
         from utils import predict_image  # 延迟导入预测函数
@@ -72,4 +72,5 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=80)  # Run in development mode, modify configuration for production environment
+    # app.run(debug=True, port=80)  # Run in development mode, modify configuration for production environment
+    app.run(port=10000)  # Run in development mode, modify configuration for production environment
