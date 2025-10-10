@@ -1,0 +1,7 @@
+pip install  --index-url https://pypi.tuna.tsinghua.edu.cn/simple/  -r requirements.txt
+
+python app.py
+
+put onto github
+
+then deploy to render, test then shutdown

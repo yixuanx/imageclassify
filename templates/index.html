@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResNet50 Image Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ResNet50 Image Recognition</h1>
+        
+        <div class="upload-area">
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="predict-btn">Start Recognition</button>
+        </div>
+
+        <div class="preview-area">
+            <img id="image-preview" alt="Preview">
+        </div>
+
+        <div class="results-area" id="results">
+            <!-- Recognition results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

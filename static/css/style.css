@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.upload-area {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#image-upload {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#predict-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#predict-btn:hover {
+    background-color: #45a049;
+}
+
+.preview-area {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 400px;
+    display: none;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.results-area {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.result-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-class {
+    font-weight: bold;
+    color: #333;
+}
+
+.result-prob {
+    color: #666;
+    font-size: 0.9em;
+}
