@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display recognition results
     function displayResults(results) {
-        let html = '<h3>Recognition Results (Top 3):</h3>';
+        let html = '<h3>Recognition Results with ResNet50 (Top 3):</h3>';
         results.forEach((result, index) => {
             const probability = (result.probability * 100).toFixed(2);
             html += `
