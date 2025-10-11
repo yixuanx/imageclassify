@@ -6,3 +6,13 @@ python app.py
 put onto github
 
 then deploy to render, test then shutdown
+
+    Admin URL: https://dashboard.render.com/web/srv-d3kas249c44c73aai7j0
+    Deployment URL: https://imageclassify-bzt2.onrender.com/
+
+    root@HPPC:~# ls ~/.cache/torch/hub/checkpoints/resnet50-*.pth
+    /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth  
+    /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth
+
+    #memory usage:
+    process=$(ps aux|grep app.py |grep python |awk '{print $2}'); ps -o %mem,rss,vsize,cmd -p $process; free -h
